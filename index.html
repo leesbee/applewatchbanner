@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>apple 배너</title>
+    <style>
+        body {
+            /* background: #ffef0f; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+        }
+        .banner {
+            position: relative;
+            width: 600px;
+            height: 258px;
+            background: #ccc;
+            color: #000;
+            display: block;
+            background-image: url(images/logo.gif),
+                              url(images/watch2.gif);
+            background-repeat: no-repeat, no-repeat;
+            background-position: 0 0, right;
+            background-size:200px , cover;
+            /* border: 1px solid red; */
+        }
+        .text {
+            width: 300px;
+            position: absolute;
+            text-decoration: none;
+            top: 60px;
+            right: 20px;
+            color: #fff;
+            text-align: center;
+            font-weight: 800;
+            font-size: 20px;         
+        }
+        span {
+            font-size: 30px;
+            animation-name: colorchange;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes colorchange {
+            from {
+                color: purple;
+            }
+            to {
+                color: orange;
+            }
+            
+        }
+        img {
+            width: 80px;
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="https://www.apple.com/kr/apple-watch-series-6/" class="banner">
+        <div class="text"><span>APPLE WATCH<br>Series 6</span><br>The future of health<br>is on your wrist.</div>
+        <img src="./images/watchlogo.png" alt="logo">
+    </a>
+    
+</body>
+</html>
