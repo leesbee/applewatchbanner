@@ -58,7 +58,16 @@
             position: absolute;
             right: 20px;
             bottom: 20px;
+            animation-name: logoslide;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
         }
+        @keyframes logoslide {
+            from{right: 20px;}
+            to{right: 300px;}
+        }
+
     </style>
 </head>
 <body>
